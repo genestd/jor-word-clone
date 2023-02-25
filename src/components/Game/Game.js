@@ -34,10 +34,9 @@ function Game() {
     }
   }
 
-  console.log(currentGuess, guessList)
   return (
     <>
-      <GameBoard guessList={guessList} />
+      <GameBoard guessList={guessList} answer={answer} currentGuess={currentGuess} />
       <GuessInput handleGuess={handleGuess} />
       {/* <GuessResults guessList={guessList} /> */}
     </>
